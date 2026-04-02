@@ -1,0 +1,251 @@
+:root {
+    --primary-maroon: #8B1D2E;
+    --dark-maroon: #631421;
+    --bg-cream: #FFF8F0;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Ribbon Effect */
+.ribbon {
+    position: fixed;
+    top: 40px;
+    right: -50px;
+    background: var(--primary-maroon);
+    color: white;
+    padding: 10px 60px;
+    transform: rotate(45deg);
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white);
+    padding: 1rem 5%;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.uni-name {
+    font-weight: 700;
+    color: var(--primary-maroon);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.cell-name {
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.event-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--primary-maroon);
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.highlight {
+    font-style: italic;
+    color: var(--dark-maroon);
+}
+
+/* Grid Layout */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Speaker Card */
+.image-wrapper {
+    border: 3px solid var(--primary-maroon);
+    border-radius: 20px;
+    padding: 10px;
+    background: white;
+    box-shadow: 20px 20px 0px rgba(139, 29, 46, 0.1);
+}
+
+.speaker-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.speaker-info {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.speaker-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-maroon);
+}
+
+.credentials {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Details Card */
+.date-badge h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--primary-maroon);
+    line-height: 1;
+}
+
+.save-date {
+    color: var(--primary-maroon);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.time-box {
+    background: var(--primary-maroon);
+    color: white;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.location-info {
+    font-size: 1.5rem;
+    color: var(--primary-maroon);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-icon {
+    font-size: 2rem;
+}
+
+/* Buttons */
+.cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: var(--primary-maroon);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--dark-maroon);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 2px solid var(--primary-maroon);
+    color: var(--primary-maroon);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-maroon);
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-maroon);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.organizers p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.names {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.divider {
+    margin: 0 15px;
+    opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-title {
+        font-size: 2.2rem;
+    }
+    .ribbon {
+        display: none;
+    }
+    .container {
+        padding: 2rem 1.5rem;
+    }
+}
