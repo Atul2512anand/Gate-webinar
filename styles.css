@@ -56,7 +56,7 @@ body {
     flex-direction: column;
 }
 
-.uni-name {
+.uni-info {
     font-weight: 700;
     color: var(--primary-maroon);
     font-size: 0.9rem;
